@@ -14,7 +14,7 @@ if (license === 'pro') {
   libraries.push(require("@fortawesome/free-solid-svg-icons"))
   libraries.push(require("@fortawesome/free-regular-svg-icons"))
 }
-fs.rmdirSync("./dist", { recursive: true, force: true })
+fs.rmSync("./dist", { recursive: true, force: true })
 const template = `
 export default {
   name: '{{name}}',
