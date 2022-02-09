@@ -37,6 +37,7 @@ libraries.forEach((set) => {
   Object.keys(iconNames).forEach((key) => {
     const icon = set[iconNames[key][1]];
     if (!icon) {
+      console.log(`\x1b[31m${iconNames[key][1]}\x1b[0m doesn't exist in \x1b[32m${set.prefix}\x1b[0m set, the ant design will use the default icon.`)
       return
     }
     const data = {
