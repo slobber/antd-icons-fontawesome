@@ -12,6 +12,16 @@ Replace Ant Design Icons inside Ant Design components with FontAwesome icons.
 > pnpm i '@slobber/antd-icons-fontawesome'
 ```
 
+### API
+
+```
+// default use 'fas'
+const defaultAliasWithFas = antdIconAlias()
+
+// you can indicate the fontawesome set to replace ant icons (fontawesome pro subscribe only).
+const aliasWithFal = antdIconAlias('fal')
+```
+
 ### `react-app-rewired` Usage 用法
 
 Add follow code in `config-overrides.js`:
@@ -24,7 +34,7 @@ const antdIconAlias = require('@slobber/antd-icons-fontawesome')
 const addCustomize = () => (config, env) => {
   config.resolve.alias = {
     ...config.resolve.alias,
-    ...antdIconAlias('far')
+    ...antdIconAlias()
   }
   ......
 }
@@ -44,7 +54,7 @@ export default defineConfig(() => {
   return {
     resolve: {
       alias: {
-        ...antdIconAlias("far"),
+        ...antdIconAlias("fas"),
       },
     },
     ...
