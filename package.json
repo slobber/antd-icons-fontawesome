@@ -11,6 +11,7 @@
     "fontawesome",
     "ant design"
   ],
+  "license" : "MIT",
   "homepage": "https://github.com/slobber/antd-ions-fontawesome#readme",
   "repository": "github:slobber/antd-icons-fontawesome",
   "devDependencies": {
