@@ -1,6 +1,6 @@
 const path = require("path");
 const iconNames = require("./iconNames");
-const alias = (name) => {
+const alias = (name = 'fas') => {
   const aliasIcons = {};
   Object.keys(iconNames).forEach((icon) => {
     aliasIcons[`@ant-design/icons-svg/es/asn/${icon}`] = path.resolve(
