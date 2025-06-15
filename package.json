@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "private": false,
+  "access": "public",
   "files": [
     "dist"
   ],
@@ -15,7 +16,7 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/slobber/antd-5-tabler-icons#readme",
-  "repository": "github:slobber/antd-icons-fontawesome",
+  "repository": "github:slobber/antd-5-tabler-icons#readme",
   "devDependencies": {
     "@tabler/icons": "^3.34.0"
   },
