@@ -26,7 +26,7 @@ Object.keys(iconNames).forEach((key) => {
         viewBox: "0 0 24 24",
         focusable: "false",
         fill: "none",
-        stroke: "currentColor",
+        stroke: "none",
         strokeWidth: "1.25",
         strokeLinecap: "round",
         strokeLinejoin: "round",

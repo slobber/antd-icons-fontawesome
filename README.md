@@ -1,6 +1,6 @@
 ## Instruction 介绍
 
-Replace Ant Design Icons inside Ant Design components with FontAwesome icons. 
+Replace Ant Design Icons inside Ant Design components with FontAwesome icons.
 
 使用 tabler/icons 图标替换 Ant Design 组件中的内置图标。
 
@@ -14,7 +14,7 @@ Replace Ant Design Icons inside Ant Design components with FontAwesome icons.
 
 ### API
 
-```
+````
 
 ### `react-app-rewired` Usage 用法
 
@@ -34,7 +34,7 @@ const addCustomize = () => (config, env) => {
 }
 ......
 
-```
+````
 
 ### `vite` Usage 用法
 
@@ -42,7 +42,7 @@ Add follow code in `vite.config.js`:
 在 `vite.config.js` 中添加以下代码：
 
 ```js
-import antdIconAlias from "@slobber/antd-5-tabler-icons";
+import { antdIconAlias } from "@slobber/antd-5-tabler-icons";
 
 export default defineConfig(() => {
   return {
@@ -54,4 +54,15 @@ export default defineConfig(() => {
     ...
   }
 })
+```
+
+Add follow style to global css file:
+在全局 css 文件中添加以下样式：
+
+```css
+.anticon svg {
+  fill: none;
+  width: 18px;
+  height: 18px;
+}
 ```
