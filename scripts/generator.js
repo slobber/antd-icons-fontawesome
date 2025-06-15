@@ -22,7 +22,15 @@ Object.keys(iconNames).forEach((key) => {
   const data = {
     icon: {
       tag: "svg",
-      attrs: { viewBox: "0 0 24 24", focusable: "false" },
+      attrs: {
+        viewBox: "0 0 24 24",
+        focusable: "false",
+        fill: "none",
+        stroke: "currentColor",
+        strokeWidth: "1.25",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+      },
       children: themes[tiStyle][tiName].map((x) => ({
         tag: x[0],
         attrs: x[1],

@@ -1,6 +1,6 @@
 {
   "name": "@slobber/antd-5-tabler-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "private": false,
   "access": "public",
