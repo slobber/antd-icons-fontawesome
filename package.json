@@ -2,6 +2,7 @@
   "name": "@slobber/antd-5-tabler-icons",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "private": false,
   "files": [
     "dist"
   ],
