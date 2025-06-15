@@ -1,30 +1,27 @@
 {
-  "name": "@slobber/antd-icons-fontawesome",
-  "version": "1.0.8",
+  "name": "@slobber/antd-5-tabler-icons",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
+  "type": "module",
   "keywords": [
     "antd",
     "icon",
-    "fontawesome",
+    "tabler/icons",
     "ant design"
   ],
-  "license" : "MIT",
-  "homepage": "https://github.com/slobber/antd-ions-fontawesome#readme",
+  "license": "MIT",
+  "homepage": "https://github.com/slobber/antd-5-tabler-icons#readme",
   "repository": "github:slobber/antd-icons-fontawesome",
   "devDependencies": {
-    "@fortawesome/free-regular-svg-icons": "^6.0.0",
-    "@fortawesome/free-solid-svg-icons": "^6.0.0",
-    "@fortawesome/pro-duotone-svg-icons": "^6.0.0",
-    "@fortawesome/pro-light-svg-icons": "^6.0.0",
-    "@fortawesome/pro-regular-svg-icons": "^6.0.0",
-    "@fortawesome/pro-solid-svg-icons": "^6.0.0",
-    "@fortawesome/pro-thin-svg-icons": "^6.0.0"
+    "@tabler/icons": "^3.34.0"
   },
   "scripts": {
-    "build:pro": "set FALICENSE=pro&&node ./scripts/generator.js",
-    "build:free": "set FALICENSE=free&&node ./scripts/generator.js"
+    "build": "node ./scripts/generator.js"
+  },
+  "dependencies": {
+    "@tabler/icons": "^3.34.0"
   }
 }
